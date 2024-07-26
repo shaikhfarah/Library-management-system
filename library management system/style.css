@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: burlywood;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; /* Make sure the content is centered vertically */
+    background-image: url("https://www.pixel-studios.com/blog/wp-content/uploads/2018/12/012-1200x600.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+
+}
+body::before {
+    background-image: url("https://www.pixel-studios.com/blog/wp-content/uploads/2018/12/012-1200x600.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    filter: blur(80px);
+    z-index: -1;
+    content: "";
+
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80%;
+    max-width: 1000px;
+    margin-top: 2rem;
+}
+
+#book-list, #add-book {
+    width: 50%;
+    max-width: 400px;
+    margin: 1rem;
+}
+
+#book-list {
+    text-align: left; /* Align the book list text to the left */
+}
+
+#books {
+    list-style: none;
+    padding: 0;
+}
+
+#books li {
+    color: white;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#add-book-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#add-book-form input, #add-book-form button {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#add-book-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555; /* Background color on hover */
+    color: #f0f0f0; /* Text color on hover */
+}
+.title {
+    margin-bottom: 1rem; /* Space between title and navbar */
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 2rem; /* Adjust font size as needed */
+}

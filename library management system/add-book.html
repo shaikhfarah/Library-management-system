@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-image: url("https://img.freepik.com/premium-photo/book-stack-library-blurred-bookshelf-background-education-education-background-back_756748-17160.jpg");
+            background-repeat: no-repeat;
+            background-size: cover; 
+            font-family: Arial, sans-serif; /* Set a default font */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Set text color */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh; /* Ensure content is centered vertically */
+        }
+
+        header {
+            background-color: #004080; /* Dark blue background color for the header */
+            color: white;
+            padding: 1rem;
+            width: 100%;
+            text-align: center;
+        }
+
+        main {
+            background-color: white;
+            width: 80%;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            border-radius: 8px; /* Optional: Add rounded corners */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for a subtle effect */
+        }
+
+        h2 {
+            color: #004080; /* Dark blue color for headings */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        label {
+            margin-top: 0.5rem;
+            margin-bottom: 0.2rem;
+            font-weight: bold;
+        }
+
+        input, select {
+            padding: 0.5rem;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            padding: 0.7rem;
+            font-size: 1rem;
+            background-color: #004080;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #003366; /* Darker blue on hover */
+        }
+    </style>
+    <title>Add Book</title>
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+    <main>
+        <h2>Add a New Book</h2>
+        <form id="add-book-form">
+            <label for="book-title">Book Title:</label>
+            <input type="text" id="book-title" name="book-title" placeholder="Enter book title" required>
+
+            <label for="book-author">Author:</label>
+            <input type="text" id="book-author" name="book-author" placeholder="Enter author name" required>
+
+            <label for="book-isbn">ISBN:</label>
+            <input type="text" id="book-isbn" name="book-isbn" placeholder="Enter ISBN" required>
+
+            <label for="book-availability">Availability:</label>
+            <select id="book-availability" name="book-availability" required>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
+
+            <label for="book-issued-date">Issued Date:</label>
+            <input type="date" id="book-issued-date" name="book-issued-date">
+
+            <button type="submit">Add Book</button>
+        </form>
+    </main>
+</body>
+</html>
